@@ -319,6 +319,20 @@ INSERT INTO public.galaxy VALUES (3, 3, 'galaxy3', 500, 750, 1500.75, true, true
 INSERT INTO public.galaxy VALUES (4, 4, 'galaxy4', 500, 750, 1500.75, true, true, 'solid');
 INSERT INTO public.galaxy VALUES (5, 5, 'galaxy5', 500, 750, 1500.75, true, true, 'solid');
 INSERT INTO public.galaxy VALUES (6, 6, 'galaxy6', 500, 750, 1500.75, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (7, 7, 'galaxy7', 500, 750, 1500.75, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (8, 8, 'galaxy8', 50, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (9, 9, 'galaxy9', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (10, 10, 'galaxy10', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (11, 11, 'galaxy11', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (12, 12, 'galaxy12', 50, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (13, 13, 'planet13', 500, 750, 1500.75, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (14, 14, 'planet14', 50, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (15, 15, 'planet15', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (16, 16, 'star16', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (17, 17, 'planet17', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (18, 18, 'planet18', 50, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (19, 19, 'planet19', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.galaxy VALUES (20, 20, 'planet20', 500, 750, 1500, true, true, 'solid');
 
 
 --
@@ -374,6 +388,14 @@ INSERT INTO public.planet VALUES (9, 9, 9, 'planet9', 500, 750, 1500.75, true, t
 INSERT INTO public.planet VALUES (10, 10, 10, 'pllanet10', 500, 750, 1500.75, true, true, 'solid');
 INSERT INTO public.planet VALUES (11, 11, 11, 'planet11', 500, 750, 1500.75, true, true, 'solid');
 INSERT INTO public.planet VALUES (12, 12, 12, 'planet12', 500, 750, 1500.75, true, true, 'solid');
+INSERT INTO public.planet VALUES (13, 13, 13, 'planet13', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.planet VALUES (14, 14, 14, 'planet14', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.planet VALUES (15, 15, 15, 'planet15', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.planet VALUES (16, 16, 16, 'planet16', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.planet VALUES (17, 17, 17, 'planet17', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.planet VALUES (18, 18, 18, 'planet18', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.planet VALUES (19, 19, 19, 'planet19', 500, 750, 1500, true, true, 'solid');
+INSERT INTO public.planet VALUES (20, 20, 20, 'planet20', 500, 750, 1500, true, true, 'solid');
 
 
 --
@@ -386,6 +408,20 @@ INSERT INTO public.star VALUES (3, 3, 3, 'star3', 500, 750, 1500.75, 'solid', tr
 INSERT INTO public.star VALUES (4, 4, 4, 'star4', 500, 750, 1500.75, 'solid', true, true);
 INSERT INTO public.star VALUES (5, 5, 5, 'star5', 500, 750, 1500.75, 'solid', true, true);
 INSERT INTO public.star VALUES (6, 6, 6, 'star6', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.star VALUES (7, 7, 7, 'star7', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.star VALUES (8, 8, 8, 'star8', 50, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (9, 9, 9, 'star9', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (10, 10, 10, 'star10', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (11, 11, 11, 'star11', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (12, 12, 12, 'star12', 50, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (13, 13, 13, 'star13', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (14, 14, 14, 'star14', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (15, 15, 15, 'star15', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (16, 16, 16, 'star16', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (17, 17, 17, 'star17', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (18, 18, 18, 'star18', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (19, 19, 19, 'solid19', 500, 750, 1500, 'solid', true, true);
+INSERT INTO public.star VALUES (20, 20, 20, 'star20', 500, 750, 1500, 'solid', true, true);
 
 
 --
@@ -543,11 +579,19 @@ ALTER TABLE ONLY public.star
 
 
 --
--- Name: planet planet_moon_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+-- Name: moon moon_planet_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.moon
+    ADD CONSTRAINT moon_planet_id_fkey FOREIGN KEY (planet_id) REFERENCES public.planet(planet_id);
+
+
+--
+-- Name: planet planet_star_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: freecodecamp
 --
 
 ALTER TABLE ONLY public.planet
-    ADD CONSTRAINT planet_moon_id_fkey FOREIGN KEY (moon_id) REFERENCES public.moon(moon_id);
+    ADD CONSTRAINT planet_star_id_fkey FOREIGN KEY (star_id) REFERENCES public.star(star_id);
 
 
 --
